@@ -1,0 +1,7 @@
+<listofcarddatafiles>
+
+<filetoinclude>CardDataCores.txt</filetoinclude>
+<filetoinclude>CardDataset1-5.txt</filetoinclude>
+
+
+</listofcarddatafiles>

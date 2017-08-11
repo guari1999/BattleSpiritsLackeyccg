@@ -1,0 +1,255 @@
+<plugin>
+<pluginversion>1.0</pluginversion>
+<pluginname>battlespirits</pluginname>
+<gamezone>
+      <label>Hand</label>
+     <visibletoowner>yes</visibletoowner>
+     <visibletoothers>no</visibletoothers>
+</gamezone>
+<gamezone>
+      <label>Deck</label>
+      <visibletoowner>no</visibletoowner>
+      <visibletoothers>no</visibletoothers>
+</gamezone> 
+
+
+<playerstat><label>Life</label><initialvalue>5</initialvalue></playerstat>
+<playerstat><label>Reserve</label><initialvalue>4</initialvalue></playerstat>
+
+<deckzone>
+     <label>Deck</label>
+     <gamezonetoloadto>Deck</gamezonetoloadto>
+     <shuffle>yes</shuffle>
+</deckzone>
+<deckzone>
+     <label>Starting</label>
+     <gamezonetoloadto>Starting</gamezonetoloadto>
+     <shuffle>no</shuffle>
+</deckzone>
+<deckzone>
+     <label>SideDeck</label>
+     <gamezonetoloadto>SideDeck</gamezonetoloadto>
+     <shuffle>yes</shuffle>
+</deckzone>
+
+
+<gamezone>
+     <label>Hand</label>
+     <visibletoowner>yes</visibletoowner>
+     <visibletoothers>no</visibletoothers>
+</gamezone>
+<gamezone>
+     <label>Deck</label>
+     <visibletoowner>no</visibletoowner>
+     <visibletoothers>no</visibletoothers>
+</gamezone>
+
+<gamezone>
+     <label>CardTrash</label>
+     <visibletoowner>yes</visibletoowner>
+     <visibletoothers>yes</visibletoothers>
+</gamezone>
+<gamezone>
+     <label>RFGZ</label>
+     <visibletoowner>yes</visibletoowner>
+     <visibletoothers>yes</visibletoothers>
+</gamezone>
+<gamezone>
+     <label>Starting</label>
+     <visibletoowner>yes</visibletoowner>
+     <visibletoothers>no</visibletoothers>
+</gamezone>
+
+<gamezone>
+     <label>Burst</label>
+     <visibletoowner>yes</visibletoowner>
+     <visibletoothers>no</visibletoothers>
+</gamezone>
+
+<gamezone>
+     <label>Banished</label>
+     <visibletoowner>yes</visibletoowner>
+     <visibletoothers>yes</visibletoothers>
+</gamezone>
+
+<gamezone>
+     <label>BlackZone</label>
+     <visibletoowner>no</visibletoowner>
+     <visibletoothers>no</visibletoothers>
+</gamezone>
+
+<gamezone>
+     <label>WhiteZone</label>
+     <visibletoowner>yes</visibletoowner>
+     <visibletoothers>no</visibletoothers>
+</gamezone>
+
+<gamezone>
+     <label>Reserve</label>
+     <visibletoowner>yes</visibletoowner>
+     <visibletoothers>yes</visibletoothers>
+</gamezone>
+
+<gamezone>
+     <label>Life</label>
+     <visibletoowner>yes</visibletoowner>
+     <visibletoothers>yes</visibletoothers>
+</gamezone>
+
+<gamezone>
+     <label>CoreTrash</label>
+     <visibletoowner>yes</visibletoowner>
+     <visibletoothers>yes</visibletoothers>
+</gamezone>
+
+<gamezone>
+     <label>Void</label>
+     <visibletoowner>yes</visibletoowner>
+     <visibletoothers>yes</visibletoothers>
+</gamezone>
+
+
+<phase><label>StartStep</label></phase>
+<phase><label>CoreStep</label></phase>
+<phase><label>DrawStep</label></phase>
+<phase><label>RefreshStep</label></phase>
+<phase><label>MainStep</label></phase>
+<phase><label>AttackStep</label></phase>
+<phase><label>MainStep2</label></phase>
+<phase><label>EndStep</label></phase>
+
+<generalfunction><label>Ready All</label><kind>ALLYOURCARDSMAKERIGHT0DEGREES</kind><includeasbutton>yes</includeasbutton></generalfunction>
+<generalfunction><label>Draw</label><kind>DRAWCARD</kind><includeasbutton>yes</includeasbutton></generalfunction>
+<generalfunction><label>Previous Phase</label><kind>PREVIOUSPHASE</kind></generalfunction>
+<generalfunction><label>Next Phase</label><kind>NEXTPHASE</kind></generalfunction>
+<generalfunction>
+     <label>Deplete Deck</label><kind>TRANSFERCARD</kind>
+     <sourceowner>performer</sourceowner><sourcegamezone>Deck</sourcegamezone><sourceposition>top</sourceposition>
+     <destinationowner>performer</destinationowner><destinationgamezone>Discard</destinationgamezone><destinationposition>top</destinationposition>
+</generalfunction>
+<generalfunction><label>Roll</label><kind>ROLLD6</kind><includeasbutton>yes</includeasbutton></generalfunction>
+<generalfunction><label>Spawn Card</label><kind>SPAWNCARD</kind></generalfunction>
+<generalfunction><label>Roll D20</label><kind>ROLLD20</kind></generalfunction>
+<generalfunction><label>Spend All</label><kind>ALLYOURCARDSMAKERIGHT90DEGREES</kind></generalfunction>
+<generalfunction><label>Previous Turn</label><kind>PEREVIOUSTURN</kind></generalfunction>
+<generalfunction><label>Next Turn</label><kind>NEXTTURN</kind></generalfunction>
+<generalfunction><label>Flip Coin</label><kind>FLIPCOIN</kind></generalfunction>
+
+<label>Deplete Deck</label><kind>TRANSFERCARD</kind>
+<sourcegamezone>Deck</sourcegamezone>
+<destinationgamezone>Trash</destinationgamezone>
+
+
+<label>Deplete Deck</label><kind>TRANSFERCARD</kind>
+<sourcegamezone>Deck</sourcegamezone>
+<destinationgamezone>Trash</destinationgamezone>
+<destinationposition>bottom</destinationposition>
+
+
+<label>Deplete Deck</label><kind>TRANSFERCARD</kind>
+<sourcegamezone>Deck</sourcegamezone>
+<sourceposition>bottom</sourceposition>
+<destinationgamezone>Trash</destinationgamezone>
+
+
+
+<label>Deplete Deck</label><kind>TRANSFERCARD</kind>
+<sourcegamezone>Deck</sourcegamezone>
+<sourceposition>bottom</sourceposition>
+<destinationgamezone>Trash</destinationgamezone>
+<destinationposition>bottom</destinationposition>
+
+
+<label>Deplete Deck</label><kind>TRANSFERCARD</kind>
+<sourcegamezone>Deck</sourcegamezone>
+<sourceposition>random</sourceposition>
+<destinationgamezone>Trash</destinationgamezone>
+
+
+
+<label>Deplete Deck</label><kind>TRANSFERCARD</kind>
+<sourcegamezone>Deck</sourcegamezone>
+<sourceposition>random</sourceposition>
+<destinationgamezone>Trash</destinationgamezone>
+<destinationposition>bottom</destinationposition>
+
+<label>Play from Deck</label><kind>TRANSFERCARD</kind>
+<sourceowner>0</sourceowner>
+<sourcegamezone>Deck</sourcegamezone><sourceposition>random</sourceposition>
+<destinationowner>table</destinationowner>
+
+
+<label>Play from Deck</label><kind>TRANSFERCARD</kind>
+<sourceowner>0</sourceowner>
+<sourcegamezone>Deck</sourcegamezone><sourceposition>top</sourceposition>
+<destinationowner>table</destinationowner>
+
+
+<label>Play from Deck</label><kind>TRANSFERCARD</kind>
+<sourceowner>0</sourceowner>
+<sourcegamezone>Deck</sourcegamezone><sourceposition>bottom</sourceposition>
+<destinationowner>table</destinationowner>
+
+<label>Play from Deck</label><kind>TRANSFERCARD</kind>
+<sourceowner>0</sourceowner>
+<sourcegamezone>Deck</sourcegamezone><sourceposition>random</sourceposition>
+<destinationowner>table</destinationowner>
+<destinationposition>facedown</destinationposition>
+
+<label>Play from Deck</label><kind>TRANSFERCARD</kind>
+<sourceowner>0</sourceowner>
+<sourcegamezone>Deck</sourcegamezone><sourceposition>top</sourceposition>
+<destinationowner>table</destinationowner>
+<destinationposition>facedown</destinationposition>
+
+<label>Play from Deck</label><kind>TRANSFERCARD</kind>
+<sourceowner>0</sourceowner>
+<sourcegamezone>Deck</sourcegamezone><sourceposition>bottom</sourceposition>
+<destinationowner>table</destinationowner>
+<destinationposition>facedown</destinationposition>
+
+
+<label>Add Card</label><kind>TRANSFERCARD</kind>
+<sourceowner>performer</sourceowner>
+<sourcegamezone>Deck</sourcegamezone>
+<sourceposition>random</sourceposition>
+<destinationowner>performer</destinationowner>
+<destinationgamezone>Hand</destinationgamezone>
+
+<label>Add Card</label><kind>TRANSFERCARD</kind>
+<sourceowner>performer</sourceowner>
+<sourcegamezone>Deck</sourcegamezone>
+<sourceposition>bottom</sourceposition>
+<destinationowner>performer</destinationowner>
+<destinationgamezone>Hand</destinationgamezone>
+
+
+
+<cardfunction><label>Ready</label><kind>MAKERIGHT0DEGREES</kind><includeasbutton>yes</includeasbutton></cardfunction>
+<cardfunction><label>Spend</label><kind>MAKERIGHT90DEGREES</kind><includeasbutton>yes</includeasbutton></cardfunction>
+<cardfunction><label>Green-1</label><kind>REMOVECOUNTERGREEN</kind><color>green</color><includeasbutton>yes</includeasbutton></cardfunction>
+<cardfunction><label>Green+1</label><kind>ADDCOUNTER</kind><color>green</color><includeasbutton>yes</includeasbutton><PositionX>.75</PositionX><PositionY>.04</PositionY></cardfunction>
+<cardfunction><label>Red-1</label><kind>REMOVECOUNTER</kind><color>red</color><includeasbutton>yes</includeasbutton></cardfunction>
+<cardfunction><label>Red+1</label><kind>ADDCOUNTER</kind><color>red</color><includeasbutton>yes</includeasbutton><PositionX>.5</PositionX><PositionY>.04</PositionY></cardfunction>
+<cardfunction><label>Edit Note</label><kind>EDITNOTE</kind><includeasbutton>yes</includeasbutton><PositionX>.4</PositionX><PositionY>.95</PositionY></cardfunction>
+<cardfunction><label>Turn Over</label><kind>TURNOVER</kind><includeasbutton>yes</includeasbutton></cardfunction>
+<cardfunction><label>Doesn't Turn</label><kind>TOGGLETURNALLIMMUNITY</kind></cardfunction>
+<cardfunction><label>Take Control</label><kind>CHANGEOWNER</kind></cardfunction>
+<cardfunction><label>Clear</label><kind>CLEARCARD</kind><includeasbutton>yes</includeasbutton></cardfunction>
+<cardfunction><label>Clone</label><kind>CLONE</kind><includeasbutton>yes</includeasbutton></cardfunction>
+
+<definition><kind>ISYOURFACEDOWNVISIBLE</kind></definition>
+<definition><kind>ISALLOWINGMULTIPLECARDBACKS</kind></definition>
+
+
+
+
+
+
+
+
+
+
+
+
+</plugin>
