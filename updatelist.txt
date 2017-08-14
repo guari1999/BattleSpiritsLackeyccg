@@ -4,6 +4,7 @@ plugins/battlespirits/sets/CardDataset1-5.txt https://github.com/guari1999/Battl
 plugin/battlespirits/sets/CardDatasetCores.txt https://github.com/guari1999/BattleSpiritsLackeyccg/blob/master/sets/CardDatasetCores.txt
 plugin/battlespirits/CardImageURLsCores.txt https://github.com/guari1999/BattleSpiritsLackeyccg/blob/master/CardImageURLsCores.txt
 plugin/battlespirits/CardImageURLsset1-5.txt https://github.com/guari1999/BattleSpiritsLackeyccg/blob/master/CardImageURLsset1-5.txt
+plugin/battlespirits/CardGeneralURLsset1-5.txt https://www.dropbox.com/home/battlespirits1-5
 plugin/battlespirits/images/Core-Blue.png https://github.com/guari1999/BattleSpiritsLackeyccg/blob/master/images/Core-Blue.png
 plugin/battlespirits/images/Soul.png https://github.com/guari1999/BattleSpiritsLackeyccg/blob/master/images/Soul.png 
 plugin/battlespirits/images/Phase1.jpg https://github.com/guari1999/BattleSpiritsLackeyccg/blob/master/images/Phase1.jpg
@@ -22,4 +23,3 @@ plugin/battlespirits/sets/setimages/general/recenttablebackground.jpg https://gi
 plugin/battlespirits/sets/setimages/general/spawned.jpg https://github.com/guari1999/BattleSpiritsLackeyccg/blob/master/sets/setimages/general/spawned.jpg
 plugin/battlespirits/sets/setimages/general/Core-Blue.png https://github.com/guari1999/BattleSpiritsLackeyccg/blob/master/sets/setimages/general/Core-Blue.png
 plugin/battlespirits/sets/setimages/general/Soul.png https://github.com/guari1999/BattleSpiritsLackeyccg/blob/master/sets/setimages/general/Soul.png
-plugin/battlespirits/updatelist.txt https://github.com/guari1999/BattleSpiritsLackeyccg/blob/master/updatelist.txt
