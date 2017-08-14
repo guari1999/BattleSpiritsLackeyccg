@@ -1,0 +1,9 @@
+<version>
+
+<lastupdateYYMMDD>170814</lastupdateYYMMDD>
+<quality></quality>
+<versionurl>https://github.com/guari1999/BattleSpiritsLackeyccg</versionurl>
+<updateurl>https://github.com/guari1999/BattleSpiritsLackeyccg</updateurl>
+<message></message>
+
+</version>
